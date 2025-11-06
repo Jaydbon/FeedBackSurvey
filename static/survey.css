@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+body { 
     background-color: #0D1B1E;
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -20,34 +20,10 @@ body * {
     -webkit-text-fill-color: transparent;
 }
 
-
 h1{
     font-size: 7vh;
     font-weight: 700;
     text-align: center;
-}
-
-p {
-    font-size: 3vh;
-    font-weight: 300;
-}
-
-
-body #btn {
-    text-align: center;
-}
-
-.btn {
-    font-family: "Poppins", sans-serif;
-    font-size: 5vh;
-    font-weight: 300;
-    padding: 10px 80px;
-    border-radius: 30px;
-    margin: 60px 80px 60px 80px;
-    background: -webkit-linear-gradient(180deg, #F2CEE6, #E8DCB9, #C3DBC5, #7798AB);
-    -webkit-background-clip: transparent;
-    -webkit-text-fill-color: text;
-    color: #0D1B1E;
 }
 
 img#one{
@@ -58,14 +34,55 @@ img#one{
 }
 
 .slidecontainer {
-    text-align: center;
+
     width: 75%;
+    margin: auto;
+    padding-top: 100px;
 }
 
 .slider {
-    
     width: 100%;
-    height: 25px;
-    background: #d3d3d3;
-    outline: none;
+    height: 100px;
+    background: linear-gradient(to right, #F2CEE6, #E8DCB9, #C3DBC5, #7798AB);
+    border-radius: 48px;
+    appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 75px;
+    height: 75px;
+    background: #0D1B1E;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: -70px auto;
+    color: #0D1B1E;
+    font-size: 2vh;
+}
+
+.submission {
+    display: flex;
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    gap: 40px;                    /* Space between buttons */
+    padding: 40px 0;              /* Reduced padding for better centering */
+    flex-wrap: wrap;              /* Optional: allows wrapping on smaller screens */
+}
+
+
+.nav-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 3vh;
+    font-weight: 500;
+    padding: 10px 30px;
+    background: -webkit-linear-gradient(180deg, #F2CEE6, #E8DCB9, #C3DBC5, #7798AB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-style: none;
 }
