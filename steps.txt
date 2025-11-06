@@ -1,0 +1,22 @@
+User Context
+First Name (input)
+Last Name (input)
+Email (email input)
+How often do you use this product (MC (first time, yearly, monthly, daily))
+
+
+Quantitive Ratings
+Rate the experience (slider 1-10)
+    If rating under 5:
+        What did you not like about it?
+    If rating above 5:
+        What did you like about it?
+How easy is it to use this product (slider 1-10)
+    If rating under 5:
+        What did you find difficult? (textbox)
+How Likely are you to recommend this product (slider 1-10)
+
+Qualitative
+Did you encounter any bugs (textbox)
+What new features would you like (textbox)
+
