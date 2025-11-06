@@ -11,12 +11,13 @@
     <img src="{{ url_for('static', filename='images/Vector.svg') }}" id="one" alt="blob">
 
     <div id="text">
-        <h2 class="text">Question #</h2>
-        <h1 class="text">This is a placement question with no use</h1>
+        <h2 class="text">Question {{question[0]}}</h2>
+        <h1 class="text">{{question[1]}}</h1>
     </div>
     <div class="slidecontainer">
-        <input type="range" min="1" max="10" value="5" class="slider" id="feedBack" list="tickmarks">
+        <input type="range" min="0" max="10" value="5" class="slider" id="feedBack" list="tickmarks">
         <datalist id="tickmarks">
+            <option value="0" label="0"></option>
             <option value="1" label="1"></option>
             <option value="2" label="2"></option>
             <option value="3" label="3"></option>
@@ -30,13 +31,9 @@
         </datalist>
     </div>
     <div class="submission">
-        <button class="nav-btn">&lt; Prev</button>
-        <button class="nav-btn">Submit</button>
-        <button class="nav-btn">Next &gt;</button>
+        <a class="nav-btn" id="left" href="/previous">&lt; Prev</a>
+        <a class="nav-btn" id="center" href="/next">Submit</a>
+        <a class="nav-btn" id="right" href="/next">Next &gt;</a>
     </div>
-
-
-    
-    
 </body>
 </html>

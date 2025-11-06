@@ -1,7 +1,4 @@
 User Context
-First Name (input)
-Last Name (input)
-Email (email input)
 How often do you use this product (MC (first time, yearly, monthly, daily))
 
 
@@ -20,3 +17,18 @@ Qualitative
 Did you encounter any bugs (textbox)
 What new features would you like (textbox)
 
+
+Question number
+Question string
+Answer Type
+
+(1, "Rate the experience", "slider"),
+(2, "What did you not like about it?", "text"),
+(3, "How easy was it to navigate the website?", "slider"),
+(4, "What did you like most about the website?", "text"),
+(5, "How visually appealing did you find the design?", "slider"),
+(6, "What could we improve to make your experience better?", "text"),
+(7, "How satisfied are you with the website’s loading speed?", "slider"),
+(8, "Did you encounter any issues or bugs while using the site?", "text"),
+(9, "How likely are you to return to this website in the future?", "slider"),
+(10, "Is there any feature or content you wish the website had?", "text")

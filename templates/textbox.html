@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback survey</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='survey.css') }}">
+</head>
+<body>
+
+    <img src="{{ url_for('static', filename='images/Vector.svg') }}" id="one" alt="blob">
+
+    <div id="text">
+        <h2 class="text">Question {{question[0]}}</h2>
+        <h1 class="text">{{question[1]}}</h1>
+    </div>
+    <form method="POST" action="/survey">
+        <div class="textarea">
+            <textarea placeholder="Share your thoughts..."></textarea>
+        </div>
+        <div class="submission">
+            <button class="nav-btn" formaction="/previous" formmethod="post" id="left">&lt; Prev</button>
+            <button class="nav-btn" type="submit" id="center">Submit</button>
+            <button class="nav-btn" formaction="/next" formmethod="post" id="right">Next &gt;</button>
+        </div>
+    </form>
+
+
+
+    
+    
+</body>
+</html>
